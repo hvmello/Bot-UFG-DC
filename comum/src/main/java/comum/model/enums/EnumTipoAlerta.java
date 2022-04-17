@@ -1,0 +1,29 @@
+package comum.model.enums;
+
+public enum EnumTipoAlerta {
+
+    DEFAULT,
+    INUNDACAO,
+    ENXURRADA,
+    ALAGAMENTO,
+    EROSAO_MARGEM_FLUVIAL,
+    DESLIZAMENTO,
+    TEMPESTADE_DE_RAIOS,
+    GRANIZO,
+    CHUVA_INTENSA,
+    VENDAVAL,
+    INCENDIO_AREA_PROTEGIDA,
+    INCENDIO_AREA_NAO_PROTEGIDA,
+    INCENDIO_URBANO,
+    COLAPSO_EDIFICACAO,
+    ROMPIMENTO_BARRAGEM,
+    SUBSTANCIA_QUIMICA,
+    SOTERRAMENTO_DESABAMENTO,
+    ENCHENTE_INUNDACAO;
+
+    public boolean isTempestadeDeRaios() {
+        return this.equals(EnumTipoAlerta.TEMPESTADE_DE_RAIOS);
+    }
+
+
+}
